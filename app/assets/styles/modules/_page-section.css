@@ -1,0 +1,19 @@
+.beginning {
+    width:100%;
+    position: relative;
+    z-index: 1;
+}
+.slider-section {
+    position: relative;
+    width:100%;
+    z-index: 1;
+}
+.tastes {
+    width:100%;
+    height:auto;
+    min-height:700px;
+    background-color:#D3D3D3;
+    background:url('../../images/kindajean.png') repeat;
+    overflow: hidden;
+
+}

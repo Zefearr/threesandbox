@@ -1,0 +1,33 @@
+.site-header {
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-color:transparent; 
+    z-index: 2;
+   
+
+    .brand {
+        
+        text-decoration: none; 
+        font-size:16px;
+        /* display:block; */
+       padding: 15px 0;
+        position: absolute;
+        font-weight:600;
+        text-shadow: 0 1px 3px #444; 
+        background:url('../../images/ss.svg') center no-repeat;
+        display:block; 
+       background-position:center;
+       background-size:contain;
+       color:#fff;
+        text-indent: -9999px;
+      /* transform: scaleX(-1); */
+        width:200px;
+        height:80px;
+        
+       
+      
+       
+    }
+}
