@@ -15,7 +15,7 @@ gulp.task('watch', () => {
    watch('./app/index.html', () => {  
       browserSync.reload();
    })
-   watch('./app/assets/styles/**/*.css', () => {
+   watch('./app/assets/styles/**/*.css', () => { 
        gulp.start('cssInject')
    })
    watch('./app/assets/scripts/**/*.js', () => {
@@ -25,10 +25,10 @@ gulp.task('watch', () => {
 })
 
 gulp.task('cssInject', ['styles'], () => { 
-    return gulp.src('./app/temp/styles/styles.css')
+    return gulp.src('./app/temp/styles/styles.css') 
         .pipe(browserSync.stream())
 })
 
 gulp.task('scriptsRefreshed', ['scripts'], () => {
-    browserSync.reload();
+    browserSync.reload(); 
 })

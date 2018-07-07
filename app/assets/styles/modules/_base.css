@@ -2,14 +2,14 @@ body {
     overflow: auto;
     background-color:#BEC6D9;  
      background-color:#B7A7C1;  
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Raleway', sans-serif;  
     
     
 
 
  } 
  * {
-     box-sizing: border-box;
+     box-sizing: border-box; 
  }
  /* img {
      max-width: 100%;

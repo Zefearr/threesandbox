@@ -3,9 +3,10 @@ class Mobile {
         this.menuIcon = document.querySelector('.menu-icon');
         this.mobileMenu = document.querySelector('.main-nav');
         this.events();
+        console.log('123')
     }
     events() {
-        this.menuIcon.addEventListener('click', this.toggleMenu.bind(this));
+        this.menuIcon.addEventListener('click', this.toggleMenu.bind(this));  
     }
     toggleMenu() {
         this.mobileMenu.classList.toggle('main-nav--expanded');
