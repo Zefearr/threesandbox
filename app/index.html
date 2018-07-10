@@ -8,6 +8,7 @@
     <title>Silver Spring Mineral Water</title> 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600" rel="stylesheet"> 
     <link rel="stylesheet" href="../temp/styles/styles.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/> 
 </head>
 
 <body>
@@ -31,6 +32,7 @@
                     <li>
                         <a class="buy" href="#">Buy it now</a>
                     </li>
+                  
                 </ul>
             </nav>
         </div>
@@ -41,43 +43,52 @@
 
     </header>
 
-    <section class="beginning">
+    <section class="page-section page-section--beginning">
         <div class="main-banner">
             <picture>
-                <!-- <source srcset="../images/3bottles.png" media="(min-width:1366px)">
-                <source srcset="../images/bg_blue--large.png" media="(min-width:1024px)">
-                <source srcset="../images/bg_blue--medium.png" media="(min-width:760px)">
-                <source srcset="../images/bg_blue--small.png" media="(min-width:450px)"> -->
-                <img class="main-banner__bg_img" src="../images/3bottles.png" alt="">
+                <source srcset="../images/3bottles_2.png" media="(min-width:1366px)"> 
+                <source srcset="../images/3bottles_2_larger.png" media="(min-width:1024px)"> 
+                <source srcset="../images/3bottles_2_large.png" media="(min-width:768px)">
+                <source srcset="../images/3bottles_2__mid.png" media="(min-width:450px)">  
+                <img src="../images/3bottles_2__smallest.png" alt="mr drop">
 
             </picture>
             <!-- <img class="main-banner__bg_img" src="../images/bg_blue5.png" alt="">     -->
             <div class="main-banner__text-content">
                 <!-- <img src="../images/catfish.png" alt=""> -->
                 <p>
-                    <strong>"Refreshing, life-giving, priceless"</strong>
+                    <strong>"Refreshing, life-giving, priceless"</strong> 
                 </p>
                 <p>The only thing u can`t live without..</p>  
-                <h3>SILVER SPRING</h3>
+                <h3>MR DROP mineral water</h3>
+                <a class="main-banner__button" href="">Getting Started</a>
             </div>
         </div>
     </section>
 
-    <section class="tastes">
+    <section class="page-section page-section--tastes">
+        <div class="page-section__wrapper">
+        <!-- <div class="tastes__overlay"></div> -->
 
-        <h2 class="slider__title">Choose one of you favorite taste</h2>
+        <h2 class="page-section__title">Choose one of you favorite taste</h2>
 
         <div class="tastes-wrapper">
+            <div class="tastes__item"> <span>Lemon</span> </div>
             <div class="tastes__item"></div>
+            <div class="tastes__item"><span>Watermelon</span></div>
             <div class="tastes__item"></div>
-            <div class="tastes__item"></div>
+            <div class="tastes__item"><span>Classic</span></div>
            
         </div>
-
+        <div class="tastes__desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam libero ipsa dolore temporibus molestias, sunt expedita incidunt voluptates! Doloribus impedit odio totam mollitia commodi vitae, perspiciatis saepe eaque odit quam, fugiat rerum recusandae ea libero? Eaque porro eius neque rem harum illo, aperiam aliquam iste, nam fugit provident itaque ipsam?</p>
+        </div>
+    </div>
     </section>
     
-    <section class="slider-section" style="height:1000px;">
-        <h2 class="slider__title">What is inside?</h2>
+    <section class="page-section page-section--slider">
+        <div class="page-section__wrapper">
+        <h2 class="page-section__title">What is inside?</h2>
 
         <div class="slider-section-wrapper">
 
@@ -92,16 +103,22 @@
             <div id="slider-container">
 
                 <div class="layer-bottom">
-                    <img src="images/single_bottle__small_320.png" alt="">
+                 
+                            <img src="images/fluid_with_bottle_1.png" alt=""> 
+                   
+                    
                 </div>
                 <div class="layer-top">
-                    <img src="images/single_water_small_320.png" alt="">
-                    <div class="layer-top__text-content"> 
-                    </div>
+                     
+                                <img src="images/fluid_without__bottle.png" alt=""> 
+                      
+                   
+                  
                 </div>
 
                 <span class="handle"></span> 
             </div>
+
 
             <div class="b-features">
                 <ul class="w-features__list">
@@ -113,16 +130,50 @@
 
         </div>
 
-
+    </div>
     </section>
 
     
+    <section class="page-section page-section--testimonials">
+        <div class="page-section__wrapper">
+            <!-- <img src="images/small.png" alt=""> -->
+        </div> 
+    </section>
 
        
   
+    <section class="page-section page-section--footer">
+        <div class="page-section__wrapper">
+                <footer class="site-footer">
+                    <div class="container container--footer">
+                        <div class="site-footer__nav-wrapper">
+                            <ul class="site-footer__nav">
+                                <h2>Products</h2>
+                                <li><a href="#">Where to buy</a></li>
+                                <li><a href="#">Distributors</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Career</a></li>
+                            </ul> 
+                            <ul class="site-footer__nav-social">
+                                    <h2>Buy</h2>
+                                    <li><a href="#">Where to buy</a></li>
+                                    <li><a href="#">Distributors</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Career</a></li>
+                                </ul> 
+                        </div>
+                       
+                    </div>
+                    <div class="site-footer__last">
+                            <p class="site-footer__copy">Designed by SKdesign 2018</p>
 
-  
-    <script src="/temp/scripts/app.js"></script> 
+                    </div>
+                </footer> 
+        </div>
+       
+    </section>
+    <script src="temp/scripts/app.js"></script> 
+   
 </body>
 
 </html>

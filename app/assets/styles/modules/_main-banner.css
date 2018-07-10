@@ -2,13 +2,34 @@
     width:100%;
     position: relative;
    
+   &__button {
+       display:block;
+       color:#fff;
+       margin: 0 auto;
+       padding:10px 20px;
+       max-width:200px;
+       text-align:center;
+       text-decoration:none;
+       font-size:20px;
+       border:1px solid white;
+       border-radius:20px;
+       margin-top:20px;
+       background-color:#FFF3D5;
+       color:#222;
+       font-weight:600;
+       box-shadow: 0 1px 3px black;
+       &:active {
+           transform:translateY(5%);
+            box-shadow: none;
+       }
+   }
   
-    /* img {
+    img {
         margin: 0 auto;
         display:block;
-        max-width:1920px;
+        max-width:100%;
       
-    }  */
+    } 
     /* &::before {
         content:'';
         display:block;
@@ -27,16 +48,19 @@
         position: absolute;  
         top:40%;
         left:50%;
-        max-width:50%;
+        width:100%;
         transform:translateY(-50%) translateX(-50%);
         /* display:flex; */
         /* border:1px solid white; */
         padding:10px;
-        border-radius:10px;          
+        border-radius:10px; 
+        @mixin atMedium {
+            max-width:70%;
+        }       
     }
     p {
         color:lightgray;
-        font-size:16px; 
+        font-size:18px; 
         margin:0;
         padding:0;
         width:100%;
@@ -44,10 +68,10 @@
         text-shadow:1px 1px 1px black;
         text-align:center;
         @mixin atSmall {
-            font-size:20px;
+            font-size:26px;
         }
          @mixin atMedium  {
-            font-size:24px;
+            font-size:32px;
         }
           @mixin atLarge  {
             font-size:32px; 
@@ -57,12 +81,12 @@
         padding-left:10px;
     }
     p strong {
-        font-size:16px;
+        font-size:20px;
          @mixin atSmall {
-            font-size:20px;
+            font-size:26px;
         }
          @mixin atMedium  {
-            font-size:24px;
+            font-size:36px;
         }
           @mixin atLarge  {
             font-size:36px;
@@ -88,7 +112,7 @@
     h3 {
         position: relative;
          color:lightgray;
-        font-size:18px;
+        font-size:24px;
         margin:0;
         display:block;
         padding:0;
@@ -97,10 +121,10 @@
         text-shadow:1px 1px 1px black;
         text-align:center;
          @mixin atSmall {
-            font-size:20px;
+            font-size:26px;
         }
          @mixin atMedium  {
-            font-size:36px;
+            font-size:40px;
         }
       
     }

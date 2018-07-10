@@ -3,17 +3,49 @@
     position: relative;
     z-index: 1;
 }
-.slider-section {
+
+
+.page-section {
+    position: relative;
+    display:flex;
+    
+    &__wrapper {
+        width:100%;
+        height:auto;
+        margin: auto;
+    }
+    &--testimonials {
+        min-height:600px;
+        background-color:#fefefe;
+    }
+    &--slider {
     position: relative;
     width:100%;
     z-index: 1;
-}
-.tastes {
+    background-color:#9DCEAB; 
+    
+    }
+    &--tastes {
+       
     width:100%;
-    height:auto;
-    min-height:700px;
-    background-color:#D3D3D3;
-    background:url('../../images/kindajean.png') repeat;
+    position: relative;
+    background-color:#fff3d5;
+   
     overflow: hidden;
-
+   
+    }
+    
+    &__title {
+        text-align:center;
+        font-size:26px;
+        position: relative;
+        color:#333;
+        font-weight:500;
+        margin:0;
+        padding-top:50px;
+        padding-bottom:50px;
+        @mixin atMedium {
+            font-size:40px;
+        }
+    }
 }

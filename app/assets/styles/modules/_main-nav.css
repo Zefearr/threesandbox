@@ -9,6 +9,8 @@
     width:100%;
     transform:translateY(-100%);
     transition:.3s all ease;
+    padding-top:100px;
+    padding-bottom:50px;
 
     &__list::after {
         content:"";
@@ -39,11 +41,12 @@
             border-radius:20px;
         }
         .buy:hover {
-            background-color:orange;
+            background-color:#FFF3D5;
             color:#111;
         }
         @mixin atSmall {
             float:left;
+           
         }
          
      }
@@ -51,6 +54,7 @@
           padding:12px 20px;
           color:#fff;
           text-decoration:none;
+          margin-bottom:20px;
           font-size:12px;
            display:block;
            text-transform:uppercase; 
@@ -61,6 +65,7 @@
           }
            @mixin atMedium {
               font-size:14px;
+              margin-bottom:0;
           }
           @mixin atLarge {
               font-size:16px;
@@ -103,6 +108,8 @@
            float:right;
            padding-bottom:0;
            transform:none;
+            padding-top:40px;
+            padding-bottom:20px;
        }
       
 }
@@ -114,8 +121,8 @@
     display:block;
     width:30px;
     height:24px;
-    right:10px;
-    top:10px;
+    right:20px;
+    top:20px;
     display:block;
     cursor: pointer;
     

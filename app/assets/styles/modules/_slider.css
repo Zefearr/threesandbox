@@ -17,8 +17,16 @@
     top:0;
     width:100%;
     height:100%;
-    z-index:2;
+    z-index:2; 
     overflow: hidden; 
+    &__wrapper {
+        width:100%;
+        height:100%;
+        position: relative;
+       
+        display:block;
+    }
+ 
 }
 .layer-top {
     position: absolute;
@@ -28,7 +36,8 @@
     height:100%;
     z-index:2;
     overflow: hidden;
-
+ 
+  
  
   
 }
@@ -38,7 +47,7 @@
     height:100%;
     width:1px;
     background-color:#222;
-    z-index: 3;
+    z-index: 99;
     left:50%;
     top:0;
     transform:translateX(-50%);
@@ -73,10 +82,11 @@
     align-items: center; 
     height: auto;
     overflow: hidden;  
-    @mixin atMedium {
+    @mixin atSmall {
         display:flex;
          height: 569px;  
-         height:620px;   
+         height:620px; 
+         padding-bottom:50px;  
         
     } 
     
@@ -85,8 +95,25 @@
     order:1;
     position: relative;
     z-index: 3;
-   max-width:350px;
+   /* max-width:200px; */
+   flex-basis:33.33%;
+   height:auto;
+   margin-bottom:20px;
+
+    li:nth-child(1), li:nth-child(2) {
+     
+       @mixin atMedium {
+             border-bottom:1px solid black;
+       }
+    }
    
+   li:nth-child(3) {
+       @mixin atMedium {
+              border-bottom:1px solid black;
+       }
+    
+      
+   }
     
  &__list {
      list-style:none;
@@ -104,27 +131,34 @@
      clear: both;
  }
   .mg {
-      margin-top:100px;
-      margin-bottom:50px;
+     @mixin atMedium {
+         margin-top:140px;
+         margin-bottom:140px;
+     
+     }
       
   }
  &__list li {
      display:block;
-     padding: 50px 0;
+     padding: 0px 0;
      padding-top:0;
      padding-left:5px;
      font-weight:500;
-     font-size:20px; 
+     font-size:18px; 
+     padding-bottom:20px;
      color:#333;
      float:left;
      width:100%;
      position: relative;
      line-height:1.3;
+     text-align:center;
 
      @mixin atMedium {
           font-size:22px; 
+          text-align:left;
      }
 
+   
     
 
  } 
@@ -136,9 +170,10 @@
 }
 .b-features {
     order:3;
-    max-width:350px;
+     flex-basis:33.33%;
      z-index: 3;
      position: relative;
+     margin-top:20px;
    
   @mixin atLarge {
      max-width:450px;
@@ -148,7 +183,7 @@
 }
 
 #slider-container {
-    width:320px; 
+    width:200px; 
     overflow: hidden;
     /* margin: 0 auto; */
     /* display:block; */
@@ -156,65 +191,91 @@
     margin: 0 auto;
     z-index:2;
     height:569px;
+    height:355px;
     order:2;
     /* border:1px solid black; */ 
+     img {
+        width:200px;
+        height:355px;
+        }
     @mixin atMedium {
         margin:inherit;
+        width:320px;
+        height:569px;
+        img {
+            width:320px;
+            height:569px;
+        }
     }
+
+   
 }
-li.na {
+/* li.na {
+    transform:none;
+    @mixin atMedium {
     transform:translateY(50%);
     padding-bottom:0;
-}
-.ca::after {
+    }
+   
+} */
+
+ .ca::after {
 content:'';
-display:block;
-width:105%;
-height:50px;
-transform:skewX(55deg);
+display:none;
+width:70px;
+height:1px;
+background-color:#222;
 transform-origin: right;
-transform:skewX(55deg);
-border-right:2px dashed black;
 position: absolute;
-right:-15%;
-border-top:1px solid black;
+bottom:-1px;
+right:0;
+transform-origin:left;
+transform: translateX(100%) rotate(45deg);
 
 
- 
 
-
-
+@mixin atMedium {
+    display:block;
 }
+ 
+}
+
 .na::after {
 content:'';
-display:block;
-width:105%;
-height:50px;
-transform:skewX(-55deg);
-border:2px dashed black;
+display:none;
+width:70px;
+height:1px;
+background-color:#222;
+transform-origin: right;
 position: absolute;
-right:-15%;
-bottom:0;
-border-bottom:none;
-border-left:none;
-border-bottom:1px solid black;
-border-top:none;
+bottom:-1px;
+right:0;
+transform-origin:left;
+transform: translateX(100%) rotate(-45deg);
+@mixin atMedium {
+    display:block;
+}
 }
 
 
 .mg::after {
 content:'';
-display:block;
-width:119%;
-height:2px;
+display:none;
+width:70px;
+height:1px;
+background-color:#222;
 transform-origin: right;
-/* background:url('../../images/brdr.svg'); */
 position: absolute;
-right:-20%;
-border-bottom:1px solid black;
-
-
+bottom:-1px;
+right:0;
+transform-origin:left;
+transform: translateX(100%);
+@mixin atMedium {
+    display:block;
 }
+
+
+} 
 
 
 

@@ -12,20 +12,24 @@
         text-decoration: none; 
         font-size:16px;
         /* display:block; */
-       padding: 15px 0;
+      top:10px;
+      left:20px;
         position: absolute;
         font-weight:600;
         text-shadow: 0 1px 3px #444; 
-        background:url('../../images/ss.svg') center no-repeat;
+        background:url('../../images/logoMr_drop.svg') center no-repeat; 
         display:block; 
        background-position:center;
        background-size:contain;
        color:#fff;
         text-indent: -9999px;
       /* transform: scaleX(-1); */
+        width:100px;
+        height:40px;
+        @mixin atSmall {
         width:200px;
         height:80px;
-        
+        }
        
       
        
