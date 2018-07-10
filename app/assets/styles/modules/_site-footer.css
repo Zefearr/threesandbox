@@ -1,0 +1,85 @@
+.site-footer {
+    
+    background-color:#3661A2;
+    width:100%;
+    display:block;
+    padding-top:30px;
+    /* padding-bottom:30px; */
+    &__last {
+        width:100%;
+        padding-top:20px;
+        padding-bottom:20px;
+        background-color:#2f5185; 
+        margin-top:30px;
+        position: relative;
+        /* background:url('../../images/kindajean.png'); */
+        border-top:1px solid #2e4f81;
+    }
+    &__last::before {
+        content:'';
+        display:block;
+        width:100%;
+        background-color:#3d649e;
+        height:1px;
+        position: absolute;
+        top:0;
+    }
+    h2 {
+        margin:0;
+        padding:15px 0;
+        color:lightgray;
+        text-shadow:0 1px 0 black;
+    }
+    &__nav {
+        margin:0;
+        padding:0;
+    }
+    &__nav-social {
+         margin:0;
+        padding:0;
+    }
+    &__nav-wrapper {
+        @mixin atSmall {
+            display:flex;
+        }
+    }
+    &__nav-wrapper > * {
+        flex-basis:33.33%;
+    }
+    &__copy {
+        text-align:center;
+        margin:0;
+        padding:0;
+        color:#fff;
+         text-shadow:0 1px 0 black;
+         
+    }
+    &__nav-social li {
+        list-style:none;
+        padding-bottom:10px;
+    }
+    &__nav li {
+        list-style:none;
+        padding-bottom:10px;
+    }
+       &__nav-social li a {
+        color:#fff;
+        text-shadow:0 1px 0 black;
+        text-decoration:none;
+        font-weight:500;
+        font-size:18px;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+    &__nav li a {
+        color:#fff;
+        text-shadow:0 1px 0 black;
+        text-decoration:none;
+        font-weight:500;
+        font-size:18px;
+        &:hover {
+            text-decoration:underline;
+        }
+    }
+}
