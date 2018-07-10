@@ -33,6 +33,7 @@ body {
          padding:0
  }
     }
+.container--testimonials {}
 .container--header {
      padding: 0 12px;
      
@@ -527,6 +528,7 @@ template {
 .page-section {
     position: relative;
     display:flex;
+    overflow: hidden;
 }
 .page-section__wrapper {
         width:100%;
@@ -536,6 +538,12 @@ template {
 .page-section--testimonials {
         min-height:600px;
         background-color:#fefefe;
+        padding-top:100px;
+    }
+@media(min-width:768px) {
+.page-section--testimonials {
+            padding-top:0
+    }
     }
 .page-section--slider {
     position: relative;
@@ -1271,6 +1279,63 @@ right:0;
 .site-footer__nav li a:hover {
             text-decoration:underline;
         }
+.testimonials {
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns:repeat(1, 1fr);
+}
+@media(min-width:768px) {
+.testimonials {
+        grid-template-columns:repeat(3, 1fr)
+}
+    }
+.testimonials__item {
+        
+        height:300px;
+        position: relative;
+        background-color:#fefefe;
+        /* box-shadow:0px 1px 5px gray; */
+        padding-top:75px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+.testimonials__item p {
+        font-size:20px;
+    }
+.testimonials__item h5 {
+        text-align:center;
+        font-size:16px;
+    }
+.testimonials__item img {
+        width:100%;
+        height:100%;
+    }
+.testimonials__item-avatar {
+        width:150px;
+        height:150px;
+        position: absolute;
+       
+        border-radius: 50%;
+        left:50%;
+        top:0;
+        -webkit-transform:translateX(-50%) translateY(-50%);
+                transform:translateX(-50%) translateY(-50%);
+        overflow: hidden;
+    }
+.reveal-item {
+    opacity: 0;
+    transition:.8s all ease;
+    -webkit-transform:translateY(30%);
+            transform:translateY(30%);
+    -webkit-transform-origin:center;
+            transform-origin:center;
+}
+.reveal-item--is-visible {
+        opacity: 1;
+        transition:.8s all ease;
+        -webkit-transform:translateY(0);
+                transform:translateY(0);
+    }
 
 
 

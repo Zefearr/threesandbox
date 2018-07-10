@@ -17,14 +17,14 @@
             <a class="brand" href="/">Silver Spring</a>
             <nav class="main-nav">
                 <ul class="main-nav__list">
-                    <li>
-                        <a href="#">Products</a>
+                    <li> 
+                        <a href="#products" id="products-link">Products</a> 
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#features" id="features-link">About</a>
                     </li>
                     <li>
-                        <a href="#">Testimonials</a>
+                        <a href="#testimonials" id="testimonials-link">Testimonials</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -46,11 +46,11 @@
     <section class="page-section page-section--beginning">
         <div class="main-banner">
             <picture>
-                <source srcset="../images/3bottles_2.png" media="(min-width:1366px)"> 
-                <source srcset="../images/3bottles_2_larger.png" media="(min-width:1024px)"> 
-                <source srcset="../images/3bottles_2_large.png" media="(min-width:768px)">
-                <source srcset="../images/3bottles_2__mid.png" media="(min-width:450px)">  
-                <img src="../images/3bottles_2__smallest.png" alt="mr drop">
+                <source srcset="images/3bottles_2.png" media="(min-width:1366px)"> 
+                <source srcset="images/3bottles_2_larger.png" media="(min-width:1024px)"> 
+                <source srcset="images/3bottles_2_large.png" media="(min-width:768px)">
+                <source srcset="images/3bottles_2__mid.png" media="(min-width:450px)">  
+                <img src="images/3bottles_2__smallest.png" alt="mr drop">
 
             </picture>
             <!-- <img class="main-banner__bg_img" src="../images/bg_blue5.png" alt="">     -->
@@ -66,33 +66,33 @@
         </div>
     </section>
 
-    <section class="page-section page-section--tastes">
+    <section id="products" data-link="#products-link" class="page-section page-section--tastes"> 
         <div class="page-section__wrapper">
         <!-- <div class="tastes__overlay"></div> -->
 
         <h2 class="page-section__title">Choose one of you favorite taste</h2>
 
         <div class="tastes-wrapper">
-            <div class="tastes__item"> <span>Lemon</span> </div>
-            <div class="tastes__item"></div>
-            <div class="tastes__item"><span>Watermelon</span></div>
-            <div class="tastes__item"></div>
-            <div class="tastes__item"><span>Classic</span></div>
+            <div class="tastes__item tastes-section-item"> <span>Lemon</span> </div>
+            <div class="tastes__item tastes-section-item"></div>
+            <div class="tastes__item tastes-section-item"><span>Watermelon</span></div>
+            <div class="tastes__item tastes-section-item"></div>
+            <div class="tastes__item tastes-section-item"><span>Classic</span></div>
            
         </div>
-        <div class="tastes__desc">
+        <div class="tastes__desc tastes-section-item">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam libero ipsa dolore temporibus molestias, sunt expedita incidunt voluptates! Doloribus impedit odio totam mollitia commodi vitae, perspiciatis saepe eaque odit quam, fugiat rerum recusandae ea libero? Eaque porro eius neque rem harum illo, aperiam aliquam iste, nam fugit provident itaque ipsam?</p>
         </div>
     </div>
     </section>
     
-    <section class="page-section page-section--slider">
+    <section id="features" data-link="#features-link" class="page-section page-section--slider">
         <div class="page-section__wrapper">
         <h2 class="page-section__title">What is inside?</h2>
 
         <div class="slider-section-wrapper">
 
-            <div class="w-features">
+            <div class="w-features slider-section-item">
                <ul class="w-features__list">
                    <li class="ca"> <strong>Calcium (Ca)</strong> useful for bones, teeth, muscles and the cardiovascular system</li>
                    <li class="mg"> <strong>Magnesium (Mg)</strong> regulates carbohydrate and energy metabolism</li> 
@@ -100,7 +100,7 @@
                </ul>
             </div>
 
-            <div id="slider-container">
+            <div id="slider-container" class="slider-section-item">
 
                 <div class="layer-bottom">
                  
@@ -120,11 +120,11 @@
             </div>
 
 
-            <div class="b-features">
+            <div class="b-features slider-section-item">
                 <ul class="w-features__list">
                     <li> <strong>Modern design</strong> </li>
                     <li> <strong>Perfect shape</strong> </li> 
-                    <li> <strong>Lightweight glass</strong> </li>
+                    <li> <strong>Lightweight glass</strong> </li> 
                 </ul>
             </div> 
 
@@ -134,9 +134,35 @@
     </section>
 
     
-    <section class="page-section page-section--testimonials">
+    <section id="testimonials" data-link="#testimonials-link" class="page-section page-section--testimonials">
         <div class="page-section__wrapper">
-            <!-- <img src="images/small.png" alt=""> -->
+           <div class="container container--testimonials">
+               <div class="testimonials">
+                   <div class="testimonials__item">
+                       <span class="testimonials__item-avatar">
+                           <img src="images/girl.png" alt="girls like dr drop">
+                       </span>
+                       <h5>Missie, 22 y.o</h5>
+                       <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia deserunt alias perspiciatis totam, asperiores dolorem quam consequatur voluptatibus sed quasi?"</p>
+                   </div>  
+                   <div class="testimonials__item">
+                        <span class="testimonials__item-avatar">
+                            <img src="images/dude.png" alt="programmers love dr drop">
+                        </span>
+                        <h5>John, 26 y.o</h5>
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia deserunt alias perspiciatis totam, asperiores dolorem quam consequatur voluptatibus sed quasi?"</p>
+                   </div> 
+                   <div class="testimonials__item">
+                        <span class="testimonials__item-avatar">
+                                <img src="images/beard_dude.png" alt="beard guys also love dr drop">
+
+                        </span>
+                        <h5>Mike, 36 y.o</h5>
+                        <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia deserunt alias perspiciatis totam, asperiores dolorem quam consequatur voluptatibus sed quasi?"</p>
+                   </div>
+
+               </div>
+           </div>
         </div> 
     </section>
 

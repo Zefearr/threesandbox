@@ -8,6 +8,7 @@
 .page-section {
     position: relative;
     display:flex;
+    overflow: hidden;
     
     &__wrapper {
         width:100%;
@@ -17,6 +18,10 @@
     &--testimonials {
         min-height:600px;
         background-color:#fefefe;
+        padding-top:100px;
+        @mixin atSmall {
+            padding-top:0;
+        }
     }
     &--slider {
     position: relative;

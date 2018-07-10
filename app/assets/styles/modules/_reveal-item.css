@@ -1,0 +1,12 @@
+.reveal-item {
+    opacity: 0;
+    transition:.8s all ease;
+    transform:translateY(30%);
+    transform-origin:center;
+
+    &--is-visible {
+        opacity: 1;
+        transition:.8s all ease;
+        transform:translateY(0);
+    }
+}
