@@ -5,8 +5,21 @@
     top:0;
     background-color:transparent; 
     z-index: 2;
+    
    
-
+  &--fixed {
+    position: fixed;
+    top:-100%;
+    left:0;
+    
+  }
+  &--fixed-slidedown {
+    position: fixed;
+    top:0;
+    left:0;
+    transition:.5s all ease;
+    background-color:#222;
+  }
     .brand {
         
         text-decoration: none; 

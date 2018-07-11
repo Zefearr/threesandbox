@@ -1,25 +1,39 @@
 .site-footer {
     
     background-color:#3661A2;
+    background-color:#222;
     width:100%;
     display:block;
     padding-top:30px;
     /* padding-bottom:30px; */
+    &__social {
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    &__social li {
+        float:left;
+        margin-right:10px;
+    }
+    &__social img {
+        width:30px;
+        height:auto;
+    }
     &__last {
         width:100%;
         padding-top:20px;
         padding-bottom:20px;
-        background-color:#2f5185; 
+        background-color:#333; 
         margin-top:30px;
         position: relative;
         /* background:url('../../images/kindajean.png'); */
-        border-top:1px solid #2e4f81;
+        border-top:1px solid #333;
     }
     &__last::before {
         content:'';
         display:block;
         width:100%;
-        background-color:#3d649e;
+        background-color:#444;
         height:1px;
         position: absolute;
         top:0;
@@ -28,7 +42,7 @@
         margin:0;
         padding:15px 0;
         color:lightgray;
-        text-shadow:0 1px 0 black;
+        /* text-shadow:0 1px 0 black; */
     }
     &__nav {
         margin:0;
@@ -41,6 +55,7 @@
     &__nav-wrapper {
         @mixin atSmall {
             display:flex;
+            flex-basis:60%;
         }
     }
     &__nav-wrapper > * {
@@ -51,7 +66,7 @@
         margin:0;
         padding:0;
         color:#fff;
-         text-shadow:0 1px 0 black;
+         /* text-shadow:0 1px 0 black; */
          
     }
     &__nav-social li {
@@ -64,20 +79,20 @@
     }
        &__nav-social li a {
         color:#fff;
-        text-shadow:0 1px 0 black;
+        /* text-shadow:0 1px 0 black; */
         text-decoration:none;
-        font-weight:500;
-        font-size:18px;
+        font-weight:400;
+        font-size:16px;
         &:hover {
             text-decoration:underline;
         }
     }
     &__nav li a {
         color:#fff;
-        text-shadow:0 1px 0 black;
+        /* text-shadow:0 1px 0 black; */
         text-decoration:none;
-        font-weight:500;
-        font-size:18px;
+        font-weight:400;
+        font-size:16px;
         &:hover {
             text-decoration:underline;
         }

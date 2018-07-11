@@ -57,7 +57,7 @@
    
 }
 .tastes__item:nth-child(1) {
-    background:url('../../images/lemon_1.svg') center no-repeat; 
+    background:url('../../images/limon4ik.png') center no-repeat; 
     background-size:contain; 
 
      span:nth-child(1) {
@@ -66,7 +66,7 @@
 }
 
 .tastes__item:nth-child(3) {
-    background:url('../../images/watermelon_1.svg') center no-repeat;
+    background:url('../../images/arbuzik.png') center no-repeat;
      background-size:contain;
 
       span:nth-child(1) {
@@ -75,7 +75,7 @@
     
 }
 .tastes__item:nth-child(5) {
-    background:url('../../images/classic.svg') center no-repeat;
+    background:url('../../images/classic_water.png') center no-repeat;
      background-size:contain;
      span:nth-child(1) {
          color:#31AADD;

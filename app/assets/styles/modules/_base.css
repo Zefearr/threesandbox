@@ -37,7 +37,11 @@ body {
      
  }
  .container--footer {
-     max-width:1096px;
+     max-width:1270px;
+     @mixin atSmall {
+         display:flex;
+     }
+   
  }
 
  .model {
