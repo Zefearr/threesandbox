@@ -3,8 +3,11 @@
     /* height:400px; */
     /* border:1px solid black; */
     margin: 0 auto; 
-    display:flex;
-  align-items:center;
+    @mixin atSmall {
+        display:flex;
+        align-items:center;
+    }
+  
   
  
 }
@@ -87,6 +90,10 @@
     height:4px;
     border-bottom:2px dashed #444;
     transform:scaleX(.6);
+    opacity: 0;
+    @mixin atSmall {
+        opacity: 1;
+    }
 
     
 }

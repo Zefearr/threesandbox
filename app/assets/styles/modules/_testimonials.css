@@ -8,6 +8,18 @@
          display:flex;
          justify-content:space-between;
     }
+    &__title {
+        text-align:center;
+        margin:0;
+        padding:0;
+        margin-bottom:75px;
+        font-size:30px;
+        color:#444; 
+        font-weight:400;
+        @mixin atSmall {
+            font-size:40px;
+        }
+    }
 
     &__item {
         

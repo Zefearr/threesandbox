@@ -8,13 +8,13 @@
     
    
   &--fixed {
-    position: fixed;
+    position: absolute;
     top:-100%;
     left:0;
     
   }
   &--fixed-slidedown {
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     transition:.5s all ease;
@@ -29,6 +29,7 @@
       left:20px;
         position: absolute;
         font-weight:600;
+        z-index: 3;
         text-shadow: 0 1px 3px #444; 
         background:url('../../images/logoMr_drop.svg') center no-repeat; 
         display:block; 

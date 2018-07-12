@@ -67,13 +67,13 @@ body {
     z-index: 2;
 }
 .site-header--fixed {
-    position: fixed;
+    position: absolute;
     top:-100%;
     left:0;
     
   }
 .site-header--fixed-slidedown {
-    position: fixed;
+    position: absolute;
     top:0;
     left:0;
     transition:.5s all ease;
@@ -88,6 +88,7 @@ body {
       left:20px;
         position: absolute;
         font-weight:600;
+        z-index: 3;
         text-shadow: 0 1px 3px #444; 
         background:url('../../images/logoMr_drop.svg') center no-repeat; 
         display:block; 
@@ -558,7 +559,7 @@ template {
 .page-section--testimonials {
         min-height:600px;
         background-color:#fefefe;
-        padding-top:100px;
+        padding-top:50px;
     }
 @media(min-width:768px) {
 .page-section--testimonials {
@@ -1113,12 +1114,20 @@ right:0;
     max-width:700px;
     /* height:400px; */
     /* border:1px solid black; */
-    margin: 0 auto; 
-    display:flex;
-  align-items:center;
+    margin: 0 auto;
+  
   
  
 }
+@media(min-width:768px) {
+.tastes-wrapper {
+        display:flex;
+        align-items:center
+  
+  
+ 
+}
+    }
 .tastes__overlay {
     background-color:#F0E3D6;
     width:100%;
@@ -1199,9 +1208,17 @@ right:0;
     border-bottom:2px dashed #444;
     -webkit-transform:scaleX(.6);
             transform:scaleX(.6);
+    opacity: 0;
 
     
 }
+@media(min-width:768px) {
+.tastes__item:nth-child(2), .tastes__item:nth-child(4) {
+        opacity: 1
+
+    
+}
+    }
 .tastes__desc {
     max-width:800px;
     margin: 0 auto;
@@ -1336,6 +1353,20 @@ right:0;
          display:flex;
          justify-content:space-between
 }
+    }
+.testimonials__title {
+        text-align:center;
+        margin:0;
+        padding:0;
+        margin-bottom:75px;
+        font-size:30px;
+        color:#444; 
+        font-weight:400;
+    }
+@media(min-width:768px) {
+.testimonials__title {
+            font-size:40px
+    }
     }
 .testimonials__item {
         
