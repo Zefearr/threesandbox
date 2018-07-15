@@ -623,12 +623,25 @@ template {
     transition:.3s all ease;
     padding-top:100px;
     padding-bottom:50px;
+     padding-right: 0px;
       
 }
 .main-nav__list::after {
         content:"";
         display:block;
         clear:both;
+    }
+@media(min-width:768px) {
+.main-nav {
+        padding-right: 20px
+      
+}
+    }
+@media(min-width:1366px) {
+.main-nav {
+        padding-right: 0
+      
+}
     }
 /* &__list:hover li:not(:hover) > a {
         opacity: 0.5;

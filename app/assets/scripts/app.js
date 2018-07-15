@@ -2,7 +2,7 @@ import slider from './modules/slider';
 import Mobile from './modules/mobile';
 import Reveal from './modules/reveal';
 import StickyHeader from './modules/stickyheader';
-import Contacts from './modules/contacts';
+import Contacts from './modules/contacts'; 
  
 
 var mobile = new Mobile();
