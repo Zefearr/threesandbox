@@ -1,6 +1,7 @@
 .main-banner {
     width:100%;
     position: relative;
+    overflow: hidden;
    
    &__button {
        display:block;
@@ -23,11 +24,12 @@
             box-shadow: none;
        }
    }
-  
+   
     img {
         margin: 0 auto;
         display:block;
-        max-width:100%;
+        width:100%; 
+        /* max-width:100%; */
       
     } 
     /* &::before {
