@@ -8,6 +8,7 @@
         color:#444;
         font-weight:400;
     }
+    
 }
 
 
@@ -46,22 +47,25 @@
     display:block;
     height:100%;
     width:1px;
-    background-color:#222;
+    background-color:#333;
     z-index: 99;
     left:50%;
     top:0;
     transform:translateX(-50%);
     cursor: pointer;
+    color:#9DCEAB;
 }
 .handle::before {
     content:"";
     display:block;
     width:20px;
     height:20px;
-    background-color:#111;
+   
     transform:translateX(-50%);
     position: absolute;
-    background:url('../../images/handler_cursor.png');
+  
+        /* background:url('../../assets/images/icons/handler_3.svg'); */
+
 }
 .handle::after {
     content:"";
@@ -70,9 +74,9 @@
     height:20px;
     bottom:0;
     position: absolute;
-    background-color:#111;
+   
     transform:translateX(-50%);
-    background:url('../../images/handler_cursor.png');
+    /* background:url('../../assets/images/icons/handler_3.svg'); */
 }
 .slider-section-wrapper {
    
@@ -276,6 +280,25 @@ transform: translateX(100%);
 
 
 } 
+
+.handle--icon-top {
+    position: absolute;
+    display:block;
+    width: 10px;
+    height:10px;
+    overflow: hidden;
+    
+    transform:translateX(-50%);
+}
+.handle--icon-bottom {
+    position: absolute;
+    display:block;
+    width: 10px;
+    height:10px;
+    overflow: hidden;
+    transform:translateX(-50%);
+    bottom:0;
+}
 
 
 

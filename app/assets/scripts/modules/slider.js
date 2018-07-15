@@ -15,8 +15,8 @@ class slider {
         }
      }
      initSlider(e) {
-        let delta = 0;
-        let position = this.wrapper.getBoundingClientRect().left;
+        let delta = 0,
+        position = this.wrapper.getBoundingClientRect().left;
         delta = e.clientX - position;  
         this.handler.style.left = delta + 'px';  
         this.topLayer.style.width = delta + 'px'; 

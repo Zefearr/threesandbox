@@ -1,9 +1,9 @@
-const gulp = require('gulp');
-    postcss = require('gulp-postcss');
-    autoprefixer = require('autoprefixer');
-    cssvars = require('postcss-simple-vars');
-    nested = require('postcss-nested');
-    cssimport = require('postcss-import');
+const gulp = require('gulp'),
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer'),
+    cssvars = require('postcss-simple-vars'),
+    nested = require('postcss-nested'),
+    cssimport = require('postcss-import'),
     mixins = require('postcss-mixins');
 
 gulp.task('styles', () => {

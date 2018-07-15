@@ -5,16 +5,26 @@ import smoothScroll from 'jquery-smooth-scroll';
 
 class StickyHeader {
     constructor() {
+        this.HTML = $('html, body');
         this.siteHeader = document.querySelector('.site-header');
         this.headerTrigger = document.querySelector('.main-banner__text-content');
         this.slideDownTrigger = document.querySelector('.main-banner__text-content h3');
         this.pageSections = document.querySelectorAll('.page-section');
         this.headerLinks = document.querySelectorAll('.main-nav__list a');
         this.hLinks = $('.main-nav__list a');
+        this.scrollToTopArrow = document.querySelector('.scroll-to-top');
         this.headerWayPoint();
         this.slideDownWaypoint();
         this.pageSectionWaypoints();
         this.addSmothScrolling();
+        this.events();
+    }
+   
+    scrolltotop() {
+        this.HTML.animate({scrollTop : 0}, 800);
+     }
+     events() {
+        this.scrollToTopArrow.addEventListener('click', this.scrolltotop.bind(this)); 
     }
     headerWayPoint() {
         if (this.siteHeader.classList.contains('site-header--fixed')) {

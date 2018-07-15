@@ -1,0 +1,60 @@
+
+.icon {  
+    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.svg');                   
+}
+
+
+.icon--arrow { 
+    width: 34px;  
+    height: 21.01px;
+    
+    background-position: 0 0;    
+}
+
+
+.icon--close_icon { 
+    width: 34px;  
+    height: 34px;
+    
+    background-position: 0 42.02%;    
+}
+
+
+.icon--facebook { 
+    width: 34px;  
+    height: 33.96px;
+    
+    background-position: 50% 0;    
+}
+
+
+.icon--handler { 
+    width: 22px;  
+    height: 22px;
+    
+    background-position: 42.5% 88.72580645161291%;    
+}
+
+
+.icon--linkendin { 
+    width: 34px;  
+    height: 34px;
+    
+    background-position: 100% 0;    
+}
+
+
+.icon--logoMr_drop { 
+    width: 34px;  
+    height: 13.64px;
+    
+    background-position: 100% 48.32291074474133%;    
+}
+
+
+.icon--twitter { 
+    width: 34px;  
+    height: 28.01px;
+    
+    background-position: 0 98.24968744418649%;    
+}

@@ -4,11 +4,15 @@ body {
      /* background-color:#B7A7C1;   */
      
     font-family: 'Raleway', sans-serif;  
+    position: relative;
     
-    
-
+   
 
  } 
+ body.no-scroll {
+     overflow: hidden;
+ }
+ 
  * {
      box-sizing: border-box; 
  }
@@ -38,9 +42,9 @@ body {
  }
  .container--footer {
      max-width:1270px;
-     @mixin atSmall {
+    
          display:flex;
-     }
+     
    
  }
 

@@ -6,7 +6,7 @@
 
     &--is-visible {
         opacity: 1;
-        transition:.8s all ease;
+        transition:.8s all ease; 
         transform:translateY(0);
     }
 }
