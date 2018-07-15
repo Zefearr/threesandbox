@@ -57,7 +57,7 @@
     &__nav {
         margin:0;
         padding:0;
-      
+        flex-basis:30%;
         position: relative;
         @mixin atMedium {
               border-right:1px solid #333;
@@ -81,7 +81,7 @@
          margin:0;
         padding:0;
           /* border-right:1px solid #333; */
-           
+           flex-basis:30%;
            position: relative;
            @mixin atMedium {
                 border-right:1px solid #333;
@@ -110,12 +110,16 @@
             flex-basis:60%;
         }
     }
-    &__nav-wrapper > * {
+    /* &__nav-wrapper > * {
         flex-basis:25%;
     }
     &__nav-wrapper > ul:first-child {
         flex-basis:20%;
-    }
+        @mixin atSmall {
+            flex-basis:25%;
+        }
+    } */
+  
     &__copy {
         text-align:center;
         margin:0;

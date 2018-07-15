@@ -2,7 +2,9 @@ body {
     overflow: auto;
     background-color:#fff;
      /* background-color:#B7A7C1;   */
-     
+     /* overflow-x: hidden; */
+     /* width:100%;  
+     margin: 0; */
     font-family: 'Raleway', sans-serif;  
     position: relative;
     
@@ -397,6 +399,7 @@ template {
 .main-banner {
     width:100%;
     position: relative;
+    overflow: hidden;
 }
 .main-banner__button {
        display:block;
@@ -423,7 +426,8 @@ template {
 .main-banner img {
         margin: 0 auto;
         display:block;
-        max-width:100%;
+        width:100%; 
+        /* max-width:100%; */
       
     }
 /* &::before {
@@ -1352,7 +1356,7 @@ right:0;
 .site-footer__nav {
         margin:0;
         padding:0;
-      
+        flex-basis:30%;
         position: relative;
        
     }
@@ -1382,7 +1386,7 @@ right:0;
          margin:0;
         padding:0;
           /* border-right:1px solid #333; */
-           
+           flex-basis:30%;
            position: relative;
     }
 @media(min-width:1024px) {
@@ -1416,12 +1420,15 @@ right:0;
             flex-basis:60%
     }
     }
-.site-footer__nav-wrapper > * {
+/* &__nav-wrapper > * {
         flex-basis:25%;
     }
-.site-footer__nav-wrapper > ul:first-child {
+    &__nav-wrapper > ul:first-child {
         flex-basis:20%;
-    }
+        @mixin atSmall {
+            flex-basis:25%;
+        }
+    } */
 .site-footer__copy {
         text-align:center;
         margin:0;
@@ -1560,7 +1567,10 @@ right:0;
                 transform:translateY(0);
     }
 .icon {  
-    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.svg');                   
+    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.svg');                    
+}
+.no-svg .icon {
+    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.png');                   
 }
 .icon--arrow { 
     width: 34px;  
@@ -1605,7 +1615,7 @@ right:0;
     background-position: 0 98.24968744418649%;    
 }
 .contacts {
-    position: fixed; 
+    position: fixed;  
     top:0;
     left:0;
     width:100%;
@@ -1630,19 +1640,24 @@ right:0;
     }
 .contacts__wrapper {
         background-color:#fff;
-        width:50%;
-        height:50%;
+        width:100%;
+        height:100%;
         /* min-height:300px; */ 
         margin: auto;
         position: relative;
         padding:20px;
        padding-top:50px;
     }
+@media(min-width:768px) {
+.contacts__wrapper {
+        width:50%;
+        height:50%
+    }
+    }
 .contacts p {
         margin:0;
         padding:0;
        font-size:20px;
-       
        display:block;
        
     }
