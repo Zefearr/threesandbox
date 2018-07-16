@@ -43,11 +43,9 @@ body {
      
  }
  .container--footer {
-     max-width:1270px;
-    
-         display:flex;
+    max-width:1270px;
+    display:flex;
      
-   
  }
 
  .model {
@@ -55,8 +53,10 @@ body {
      height:600px;
      display:block;
      background-color:transparent;
-  
      margin: 0 auto;
      background-color:#fff;
      
  }
+
+ /* only for validation reasons */ 
+ img[src="about:blank"] {opacity: 0} 

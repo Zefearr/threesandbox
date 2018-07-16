@@ -20,7 +20,7 @@
         background-color:#fefefe;
         padding-top:50px;
         @mixin atSmall {
-            padding-top:0;
+            padding-top:25px;
         }
     }
     &--slider {
