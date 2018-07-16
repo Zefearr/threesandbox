@@ -4,23 +4,25 @@
     background-color:#222;
     width:100%;
     display:block;
+    position: relative;
     padding-top:30px;
+    overflow: hidden;
     /* padding-bottom:30px; */
     &__social {
         list-style:none;
         margin:0; 
         padding:0; 
     }
-    &__icon {
-        width: 52px;
-        height:52px;
-        display:block;
-        margin-right:10px;
-        border:1px solid black;
-        position: relative;
+  
+    &__icons-container {
+        position: absolute;
+        bottom:0;
+        right:0;
         z-index: 99;
-      
+        transform:rotate(-35deg) scaleX(-1) translateX(-20%);
+       
     }
+  
     &__social li {
         float:left;
         margin-right:10px;
@@ -169,6 +171,7 @@
 }
 
 
+
 .scroll-to-top {
     width:30px;
     height:30px;
@@ -180,4 +183,8 @@
     &:hover {
         opacity:0.7;
     }
+}
+.footer__icon {
+    float:left;
+    margin-right:10px;
 }

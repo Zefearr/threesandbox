@@ -135,7 +135,18 @@
      clear: both;
  }
   .mg {
-     @mixin atMedium {
+
+     @mixin atSmall {
+         margin-top:100px;
+         margin-bottom:100px;
+     
+     }
+      @mixin atMedium {
+         margin-top:70px;
+         margin-bottom:70px;
+     
+     }
+       @mixin atLarge {
          margin-top:140px;
          margin-bottom:140px;
      

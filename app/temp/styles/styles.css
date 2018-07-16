@@ -2,7 +2,7 @@ body {
     overflow: auto;
     background-color:#fff;
      /* background-color:#B7A7C1;   */
-     /* overflow-x: hidden; */
+     /* overflow-x: hidden; */ 
      /* width:100%;  
      margin: 0; */
     font-family: 'Raleway', sans-serif;  
@@ -91,8 +91,8 @@ body.no-scroll {
         position: fixed;
         font-weight:600;
         z-index: 3;
-        text-shadow: 0 1px 3px #444; 
-        background:url('../../assets/images/icons/logoMr_drop.svg') center no-repeat; 
+        text-shadow: 0 1px 3px #444;  
+        background:url('../../assets/images/logoMr_drop.svg') center no-repeat;  
         display:block; 
        background-position:center;
        background-size:contain;
@@ -979,7 +979,21 @@ template {
      display:block;
      clear: both;
  }
+@media(min-width:768px) {
+.w-features .mg {
+         margin-top:100px;
+         margin-bottom:100px
+      
+  }
+    }
 @media(min-width:1024px) {
+.w-features .mg {
+         margin-top:70px;
+         margin-bottom:70px
+      
+  }
+    }
+@media(min-width:1366px) {
 .w-features .mg {
          margin-top:140px;
          margin-bottom:140px
@@ -1302,7 +1316,9 @@ right:0;
     background-color:#222;
     width:100%;
     display:block;
+    position: relative;
     padding-top:30px;
+    overflow: hidden;
 }
 /* padding-bottom:30px; */
 .site-footer__social {
@@ -1310,15 +1326,14 @@ right:0;
         margin:0; 
         padding:0; 
     }
-.site-footer__icon {
-        width: 52px;
-        height:52px;
-        display:block;
-        margin-right:10px;
-        border:1px solid black;
-        position: relative;
+.site-footer__icons-container {
+        position: absolute;
+        bottom:0;
+        right:0;
         z-index: 99;
-      
+        -webkit-transform:rotate(-35deg) scaleX(-1) translateX(-20%);
+                transform:rotate(-35deg) scaleX(-1) translateX(-20%);
+       
     }
 .site-footer__social li {
         float:left;
@@ -1486,6 +1501,10 @@ right:0;
 .scroll-to-top:hover {
         opacity:0.7;
     }
+.footer__icon {
+    float:left;
+    margin-right:10px;
+}
 .testimonials {
     /* display:flex;
     grid-gap:10px;
@@ -1567,10 +1586,10 @@ right:0;
                 transform:translateY(0);
     }
 .icon {  
-    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.svg');                    
+    background-image:  url('../../assets/images/sprites/sprite-38b723ab.svg');                    
 }
 .no-svg .icon {
-    background-image:  url('../../assets/images/sprites/sprite-1e7d60e5.png');                   
+    background-image:  url('../../assets/images/sprites/sprite-38b723ab.png');                   
 }
 .icon--arrow { 
     width: 34px;  
@@ -1582,37 +1601,49 @@ right:0;
     width: 34px;  
     height: 34px;
     
-    background-position: 0 42.02%;    
+    background-position: 0 37.517857142857146%;    
 }
 .icon--facebook { 
     width: 34px;  
     height: 33.96px;
     
-    background-position: 50% 0;    
+    background-position: 33.333333333333336% 0;    
 }
 .icon--handler { 
     width: 22px;  
     height: 22px;
     
-    background-position: 42.5% 88.72580645161291%;    
+    background-position: 89.47368421052632% 41.19117647058823%;    
 }
 .icon--linkendin { 
     width: 34px;  
     height: 34px;
     
-    background-position: 100% 0;    
+    background-position: 66.66666666666667% 0;    
 }
-.icon--logoMr_drop { 
-    width: 34px;  
-    height: 13.64px;
+.icon--mr_dot_lemon { 
+    width: 23.68px;  
+    height: 34px;
     
-    background-position: 100% 48.32291074474133%;    
+    background-position: 0 98.23214285714288%;    
+}
+.icon--mr_dot_simple { 
+    width: 26.23px;  
+    height: 34px;
+    
+    background-position: 21.572378609820536% 98.23214285714288%;    
+}
+.icon--mr_dot_simple_water_melon { 
+    width: 24.12px;  
+    height: 34px;
+    
+    background-position: 44.61029674651412% 98.23214285714288%;    
 }
 .icon--twitter { 
     width: 34px;  
     height: 28.01px;
     
-    background-position: 0 98.24968744418649%;    
+    background-position: 100% 0;    
 }
 .contacts {
     position: fixed;  
