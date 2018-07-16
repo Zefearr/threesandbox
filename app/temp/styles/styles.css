@@ -1381,6 +1381,15 @@ right:0;
        
     }
     }
+.site-footer__nav p, .site-footer__nav-social p {
+        margin:0;
+        padding:0;
+        color:#fff;
+        font-size:22px;
+        font-weight:600;
+        color:lightgray;
+        padding:5px 0;
+    }
 .site-footer__nav-social::after {
          content:'';
          display:block;

@@ -21,7 +21,7 @@ gulp.task('deleteDist', ['icons'], function(){
 })    
 
 gulp.task('optimizeImg', ['deleteDist'], function(){
-    return gulp.src(['./app/assets/images/**/*', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*'])
+    return gulp.src(['./app/assets/images/**/*', './app/favicon.png', '!./app/assets/images/icons', '!./app/assets/images/icons/**/*']) 
         .pipe(imageMin({
            multipass: true,
            progressive: true
