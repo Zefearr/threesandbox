@@ -1,9 +1,9 @@
 {
   "name": "jw",
   "version": "1.0.0",
-  "description": "just water",
+  "description": "Docs",
   "main": "app.js",
-  "scripts": {
+  "scripts": { 
     "test": "gulp watch"
   },
   "author": "zefear",
@@ -34,7 +34,7 @@
     "gulp-svg2png": "^2.0.2",
     "gulp-uglify": "^3.0.0",
     "gulp-usemin": "^0.3.29",
-    "gulp-watch": "^5.0.0",
+    "gulp-watch": "^5.0.1",
     "postcss-import": "^11.1.0",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^3.0.0",

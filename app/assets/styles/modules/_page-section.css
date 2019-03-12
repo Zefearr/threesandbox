@@ -13,7 +13,7 @@
     &__wrapper {
         width:100%;
         height:auto;
-        margin: auto;
+        margin: 0 auto;
     }
     &--testimonials {
         min-height:600px;
@@ -22,6 +22,9 @@
         @mixin atSmall {
             padding-top:25px;
         }
+    }
+    &--items {
+        background-color:#ffcce6;
     }
     &--slider {
     position: relative;
@@ -47,10 +50,23 @@
         color:#333;
         font-weight:500;
         margin:0;
-        padding-top:50px;
-        padding-bottom:50px;
+        padding-top:25px;
+        padding-bottom:10px;
         @mixin atMedium {
-            font-size:40px;
+            font-size:32px;
+        }
+    }
+    &__subtitle {
+          text-align:center;
+        font-size:18px;
+        position: relative;
+        color:#333;
+        font-weight:500;
+        margin:0;
+        padding-top:10px;
+        padding-bottom:20px;
+        @mixin atMedium {
+            font-size:18px;
         }
     }
 }

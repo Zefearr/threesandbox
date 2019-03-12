@@ -5,7 +5,8 @@ body {
      /* overflow-x: hidden; */ 
      /* width:100%;  
      margin: 0; */
-    font-family: 'Raleway', sans-serif;  
+font-family: 'Noto Sans', sans-serif;
+
     position: relative;
     
    
@@ -39,7 +40,9 @@ body {
      &--testimonials {}
  }
  .container--header {
+  
      padding: 0 12px;
+   
      
  }
  .container--footer {
@@ -60,3 +63,39 @@ body {
 
  /* only for validation reasons */ 
  img[src="about:blank"] {opacity: 0} 
+h5.disclaimer {
+    color:orange;
+    font-size:18pt;
+    text-align:center;
+}
+h3.disclaimer2 {
+color:#fff;
+font-weight:500;
+text-align:center;
+font-size:16pt;
+}
+.lor_section {
+    font-size:22px;
+    @mixin atMedium {
+        font-size:24px;
+    }
+}
+.lor_wrapper {
+    max-width:977px;
+    margin:0 auto;
+    padding:5px;
+}
+
+.items-wrapper {
+    margin:0 auto;
+    max-width:977px;
+    p {
+        font-size:24px;
+    }
+}
+.schema-wrapper {
+    max-width:1280px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom:50px;
+}

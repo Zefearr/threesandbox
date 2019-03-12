@@ -12,7 +12,8 @@
 @import "modules/_reveal-item"; 
 @import "modules/_sprite";    
 @import "modules/_contacts"; 
-
+@import "modules/_chars-grid";
+@import "modules/_locations";
 
 
 
