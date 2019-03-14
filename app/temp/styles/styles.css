@@ -5,12 +5,8 @@ body {
      /* overflow-x: hidden; */ 
      /* width:100%;  
      margin: 0; */
-font-family: 'Noto Sans', sans-serif;
-
-    position: relative;
-    
-   
-
+    font-family: 'Noto Sans', sans-serif;
+    /* position: relative; */
  }
 body.no-scroll {
      overflow: hidden;
@@ -104,6 +100,29 @@ font-size:16pt;
     display:block;
     margin-bottom:50px;
 }
+#webgl {
+    width:988px;
+    height:500px;
+    /* position: absolute;
+    top:0;
+    left:0;
+    z-index: 99;
+    width:100vw;
+    height:100vh; */
+}
+.endless {
+    width:100vw;
+    height:100vh;
+    background-color:#000;
+    color:#fff;
+    display:flex;
+}
+.endless h1 {
+        display:block;
+        margin:0;
+        margin:auto;
+        padding:0;
+    }
 .site-header {
     width:100%;
     position: absolute;
