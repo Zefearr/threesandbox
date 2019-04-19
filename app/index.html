@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Endless emptiness</title> 
+    <meta name="description" content="Sixth Station from 'Spirited Away'">
+    <title>Sixth Station</title> 
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>  
     <!--build:css assets/styles/styles.css-->
@@ -15,249 +16,74 @@
     <!--endbuild-->  
 </head>
 <body>
-        <!-- <div id="webgl"></div> -->
-        <div class="endless"><h1>Здесь больше ничего нет</h1></div>
-    <!-- <header class="site-header">
-        <div class="container container--header">
-            <a class="brand" href="/">Silver Spring</a>
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li> 
-                        <a href="#products" id="products-link">Персонажи</a> 
-                    </li>
-                    <li>
-                        <a href="#features" id="features-link">Лор</a>
-                    </li>
-                    <li>
-                        <a href="#testimonials" id="testimonials-link">Локации</a>
-                    </li>
-                    <li>
-                        <a id="" href="#game-items">Предметы</a>
-                    </li>
-                    <li>
-                            <a id="" href="#schema">Схема</a> 
-                        </li>
-                    <li>
-                            <a id="contact-open" href="#">Важно</a>
-                    </li>
-                    <li> 
-                        <a href="#products" class="buy">Buy it now</a> 
-                    </li>
-                  
-                </ul>
-            </nav>
+    <div class="overlay">
+        <p>Audio settings:</p>
+
+        <div>
+          <input type="range" id="start" name="volume"
+                 min="0" max="0.5">
+          <label for="volume">Volume</label>
         </div>
-
-        <span class="menu-icon">
-            <span class="menu-icon__mid"></span> 
-        </span>
-
-    </header>
-
-    <section class="page-section--beginning">
-        <div class="main-banner">
-                
-            <picture>
-                <source srcset="assets/images/for_main_bnr.png" media="(min-width:1366px)"> 
-                <source srcset="assets/images/lvl__mid.png" media="(min-width:450px)">   
-                <img src="assets/images/lvl_smallest.png" alt="mr drop">
-
-            </picture>
-          
-            <div class="main-banner__text-content">
-             <h5 class="disclaimer">Эта страница исключительно для RichiePanda, если ты не RichiePanda немедленно закрой эту страницу.</h5>
-             
-                <h3 class="disclaimer2">Ниже предполагаемая история</h3>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" data-link="#products-link" class="page-section page-section--tastes"> 
-        <div class="page-section__wrapper">
-        <h2 class="page-section__title">Персонажи игры</h2> 
-         <h5 class="page-section__subtitle">* Наведи курсор на карточку чтобы узнать подробнее</h5>  
         
-        <div class="chars-grid">
-            <div class="chars-grid__card">
-                <h5 class="chars-grid__card-title">Хамелеон</h5>
-                <img src="assets/images/umaru_no_image.png" alt="">
-                <div class="chars-grid__overlay">
-                       Главный персонаж игры. Возраст средний, занимался своими делами пока не был пойман (или охотником, или биологом), который увёз его в клетке в другую страну(вероятно Австралию), откуда впоследствии он совершает путешествие к себе домой.
-                </div>
-            </div>
-            <div class="chars-grid__card">
-                <img src="assets/images/umaru_no_image.png" alt="">
-                <h5 class="chars-grid__card-title">Жирный котэ</h5>
-                <span class="chars-grid__card-boss">BOSS</span>
-                <div class="chars-grid__overlay">
-                       Босс первого уровня живущий в квартире антагониста. Жирен, пушист, умён. Предположительно будет бегать вперед назад и выпускать перед собой проджектайлы. HP не много. По размеру больше в два раза чем хамелеон.  
-                </div>
-            </div>
-            <div class="chars-grid__card">
-                    <h5 class="chars-grid__card-title">Мини паучок</h5>
-                <img src="assets/images/umaru_no_image.png" alt="">
-                <div class="chars-grid__overlay">
-                        Стандартый крип первого уровня. Передвигается взад вперед на короткую дистанцию, при столкновении отнимает одно деление полоски здоровья, максимально упрощён. Милый фейс.  
-                </div>
-            </div>
-            <div class="chars-grid__card">
-                    <h5 class="chars-grid__card-title">Мини мышь</h5>
-                <img src="assets/images/umaru_no_image.png" alt="">
-                <div class="chars-grid__overlay">
-                       Небольшая мышка которая будет появляться в отверстиях на стенах и скидывать вниз проджектайл с одним и тем же паттерном.  
-                </div>
-            </div>
-            <div class="chars-grid__card">
-                    <h5 class="chars-grid__card-title">????</h5>
-                <img src="assets/images/umaru_no_image.png" alt="">
-                <div class="chars-grid__overlay">
-                    Ещё один стандартный крип(пока не придумал :()
-                </div>
-            </div>
-           
-
+        <div>
+          <input type="range" id="cowbell" class="slider" name="cowbell" 
+          min="0" max="100" value="1" step="1">
+          <!-- <label for="cowbell">Cowbell</label> -->
         </div>
-        </div> 
-    </section> 
-    <section id="schema" data-link="#schema" class="page-section page-section--schema">
-
-         <div class="schema-wrapper">
-                <h2 class="page-section__title">Ещё скрин</h2>
-
-                <img src="assets/images/for_main_bnr2.png" alt="">
-
-         </div>
-    </section> 
-    
-    <section id="features" data-link="#features-link" class="page-section page-section--slider"> 
-        <div class="page-section__wrapper">
-        <h2 class="page-section__title">Вероятная история вселенной</h2>
-            <div class="lor_wrapper">
-                    <p class="lor_section">
-                        Стилистика вселенной игры напоминает мульт "Madagascar", "В поисках Немо", и др. подобных произведений, животные в неё умеют разговаривать, обладают чувствами, эмоциями, однако ведут жизнь животных(тоесть жрут там всяких мух, обладают особенностями своего вида и т.п). Людей как таковых в игре не будет, за исключением кат сцены в начале игры(на движке), в которой некий злой(охотник, биолог) находит в лесу хамелеона и заберает его себе. Смысл всей игры это помочь главному герою добраться домой. Всех персонажей необходимо будет нарисовать и затекстурить в одном стиле, в идеале они все должны быть довольно милые(KAWAIIIII). <strong>Также необходимо придумать имена для главного героя и боссов.</strong>
-                    </p>
-                    <p class="lor_section">
-                        Самой первой локацией будет квартира антагониста, потом уровень на улице. Далее, вероятно пустыня, лес. В конце каждого уровня будет стоять босс, который по размеру будет значительно больше хамелеона и будет убиваться довольно долго. Основной механикой игры будет швыряние ящиков которые будут сповниться по триггеру. Вероятно ящиков будет несколько видов, некоторые из которыхбудут обладать большим уроном.
-                    </p>
-            </div>
-        
-
     </div>
-    </section>
-   
-
-
-    
-    <section id="testimonials" data-link="#testimonials-link" class="page-section page-section--testimonials">
-        <div class="page-section__wrapper">
-          <div class="locations__wrapper">
-              <h2 class="locations__title">Предполагаемые локации</h2>
-              <div class="locations__item">
-                  <div class="locations__img-container"><img src="assets/images/umaru_no_image.png" alt=""></div>
-                  <div class="locations__text">
-                      <h5><strong>1.  Дом антагониста.</strong></h5>
-                      Самое начало игры, главный герой вылазит из клетки?аквауриума? и прокладывает свой путь через столы, стулья, подоконники вдоль стены. Вероятны небольшие головоломки(типа потянуть рычаг, взять ключ снизу, вернуться наверх и открыть дверь/окно/ещё что-нибудь)
-
-                  </div>
-              </div>
-              <div class="locations__item">
-                    <div class="locations__img-container"><img src="assets/images/umaru_no_image.png" alt=""></div>
-                    <div class="locations__text">
-                            <h5><strong>2. Улица</strong></h5>
-                            Улица на которой герой оказывается после первого уровня.Будет довольно коротким, чтобы не делать много моделей домов. Вероятные враги на уровне, какие нибудь уличные псы, крысы, пчёлы. Вероятны механики с платформами которые будут ездить горизонтально/вертикально, через препятсвия типа луж?ям?
-  
-                    </div>
-                </div>
-                <div class="locations__item">
-                        <div class="locations__img-container"><img src="assets/images/umaru_no_image.png" alt=""></div>
-                        <div class="locations__text">
-                            <h5><strong>3. Лес</strong></h5>
-                            Лес обычный
-                        </div>
-                    </div>
-          </div>
-        </div> 
-    </section>
-    <section id="game-items" data-link="#game-items" class="page-section page-section--items">
-            <div class="items-wrapper">
-                    <h2 class="page-section__title">Предметы</h2>
-                  
-                    <img class="sleepy" src="assets/images/umaru_sleep.jpg" alt="">
-            </div>
-    </section> 
-       
-  
-    <section class="page-section--footer"> 
-        <div class="page-section__wrapper">
-                <footer class="site-footer"> 
-                    <div class="site-footer__icons-container">
-                            <span class="icon icon--mr_dot_simple footer__icon"></span>
-                         
-                    </div>
-                
-                    
-                    <div class="container container--footer">
-                        <div class="site-footer__nav-wrapper">
-                            <ul class="site-footer__nav">
-                                <li><p>Ссылки</p></li>
-                                <li><a href="#">линк#1</a></li>
-                                <li><a href="#">линк#2</a></li>
-                                <li><a href="#">линк#3</a></li>
-                                <li><a href="#">линк#4</a></li>
-                            </ul> 
-                            <ul class="site-footer__nav-social">
-                                    <li><p>Контакты</p></li>
-                                    <li><a href="#">линк#5</a></li>
-                                    <li><a href="#">линк#6</a></li>
-                                    <li><a href="#">линк#7</a></li>
-                                    <li><a href="#">линк#8</a></li>
-                                </ul>  
-                             
-                        </div>
-                        <div class="site-footer__nav-wrapper2">
-                                <h2>Social</h2>
-                            <ul class="site-footer__social">
-                                <li><a href="#"><span  class="icon icon--facebook"></span></a></li>   
-                                <li><a href="#"><span class="icon icon--linkendin"></span></a></li> 
-                                <li><a href="#"><span class="icon icon--twitter"></span></a></li>   
-                            </ul>
-                        </div>
-                       
-                    </div>
-                    <div class="site-footer__last">
-                            <p class="site-footer__copy">Designed by SKdesign 2018</p>
-                            <span class="scroll-to-top icon icon--arrow"></span>
-                    </div>
-                </footer> 
-        </div>
-       
-    </section>
-    <div id="contacts" class="contacts">  
-            <div class="contacts__overlay"></div>
-        <div class="contacts__content">
-            <div class="contacts__wrapper">
-                    <p>А тут ничего нет бe-бе-бе</p>
-                    <img src="assets/images/umaru_hehe.jpg" alt="">
-                <span class="icon icon--close_icon"></span>
-            </div>   
-        </div>
+    <div id="webgl"></div>
       
-        
-    </div> -->
-    <script src="/lib/three.js"></script> 
-    <script src="/lib/FBXLoader.js"></script>
-    <script src="/lib/inflate.min.js"></script>
-    <script src="/lib/EffectComposer.js"></script>
-    <script src="/lib/RenderPass.js"></script>
-    <script src="/lib/ShaderPass.js"></script>
-    <script src="/lib/CopyShader.js"></script>
-    <script src="/lib/LuminosityHighPassShader.js"></script> 
-     <script src="/lib/UnrealBloomPass.js"></script>
-    <script src="/lib/OrbitControls.js"></script>
-    
-    <!--build:js assets/scripts/app.js-->   
-    <script src="/temp/scripts/app.js" async></script> 
-    <!--endbuild-->
+   <!--build:js assets/scripts/three.js-->    
+   <script src="/lib/three.js"></script> 
+   <!--endbuild-->
+
+ <!--build:js assets/scripts/FBXLoader.js-->  
+ <script src="/lib/FBXLoader.js"></script>
+ <!--endbuild-->
+ 
+  <script src="/lib/Water.js"></script> 
+ <!--build:js assets/scripts/inflate.min.js-->  
+ <script src="/lib/inflate.min.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/EffectComposer.js-->  
+ <script src="/lib/EffectComposer.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/RenderPass.js-->  
+ <script src="/lib/RenderPass.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/ShaderPass.js-->  
+ <script src="/lib/ShaderPass.js"></script> 
+ <!--endbuild-->
+ <!--build:js assets/scripts/CopyShader.js-->  
+ <script src="/lib/CopyShader.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/LuminosityHighPassShader.js-->  
+ <script src="/lib/LuminosityHighPassShader.js"></script> 
+ <!--endbuild-->
+ <!--build:js assets/scripts/UnrealBloomPass.js-->  
+  <script src="/lib/UnrealBloomPass.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/OrbitControls.js-->  
+ <script src="/lib/OrbitControls.js"></script>
+ <!--endbuild-->
+ <!--build:js assets/scripts/Sky.js-->  
+ <script src="/lib/Sky.js"></script> 
+  <!--endbuild-->
+  <script src="/lib/WebGl.js"></script>
+ <!--build:js assets/scripts/VignetteShader.js-->  
+  <script src="/lib/VignetteShader.js"></script>
+  <!--endbuild-->
+  <!--build:js assets/scripts/RGBShiftShader.js-->  
+  <script src="/lib/RGBShiftShader.js"></script>
+  <!--endbuild-->
+  <script src="/lib/stats.min.js"></script>
+  <!--build:js assets/scripts/dat.gui.min.js-->  
+ <script src="/lib/dat.gui.min.js"></script>
+ <!--endbuild--> 
+ 
+ <!--build:js assets/scripts/app.js-->   
+ <script src="/temp/scripts/app.js" async></script> 
+ <!--endbuild-->
     
     
    
