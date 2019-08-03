@@ -32,7 +32,7 @@ export const lights = (function() {
       return light;
     },
      getAmbientLight: function(intensity) {
-        var light = new THREE.AmbientLight(0x80bfff, intensity);  
+        var light = new THREE.AmbientLight(0x81AECB, intensity);  
         return light;
      }
   }

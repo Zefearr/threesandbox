@@ -1,20 +1,6 @@
-@import "modules/_mixins"; 
-@import "modules/_base"; 
-@import "modules/_navbar";
 @import "normalize.css"; 
-@import "modules/_main-banner"; 
-@import "modules/_page-section"; 
-@import "modules/_main-nav";  
-@import "modules/_slider";
-@import "modules/_tastes";
-@import "modules/_site-footer";
-@import "modules/_testimonials";
-@import "modules/_reveal-item"; 
-@import "modules/_sprite";    
-@import "modules/_contacts"; 
-@import "modules/_chars-grid";
-@import "modules/_locations";
-
+@import "modules/_base";
+@import "modules/_main-overlay"; 
 
 
  

@@ -1,93 +1,135 @@
 <!DOCTYPE html>
 <html lang="zxx">
-<head> 
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Sixth Station from 'Spirited Away'">
-    <title>Sixth Station</title> 
+    <title>Sixth Station</title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>  
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
     <!--build:css assets/styles/styles.css-->
-    <link rel="stylesheet" href="temp/styles/styles.css">    
+    <link rel="stylesheet" href="temp/styles/styles.css">
     <!--endbuild-->
-    <!--build:js assets/scripts/Vendor.js-->  
-    <script src="/temp/scripts/Vendor.js"></script>     
-    <!--endbuild-->  
+    <!--build:js assets/scripts/Vendor.js-->
+    <script src="/temp/scripts/Vendor.js"></script>
+    <!--endbuild-->
 </head>
+
 <body>
-    <div class="overlay">
-        <p>Audio settings:</p>
+    <script type="x-shader/x-vertex" id="vertexShader">
 
-        <div>
-          <input type="range" id="start" name="volume"
-                 min="0" max="0.5">
-          <label for="volume">Volume</label>
-        </div>
-        
-        <div>
-          <input type="range" id="cowbell" class="slider" name="cowbell" 
-          min="0" max="100" value="1" step="1">
-          <!-- <label for="cowbell">Cowbell</label> -->
-        </div>
-    </div>
+
+        varying vec3 vWorldPosition;
+
+        void main() {
+
+            vec4 worldPosition = modelMatrix * vec4(position, 1.0);
+            vWorldPosition = worldPosition.xyz;
+
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+
+        }
+
+
+    </script>
+
+    <script type="x-shader/x-fragment" id="fragmentShader">
+
+
+			uniform vec3 topColor;
+			uniform vec3 bottomColor;
+			uniform float offset;
+			uniform float exponent;
+ 
+			varying vec3 vWorldPosition;
+
+			void main() {
+
+				float h = normalize( vWorldPosition + offset ).y;
+				gl_FragColor = vec4( mix( bottomColor, topColor, max( pow( max( h , 0.0), exponent ), 0.0 ) ), 1.0 );
+
+			}
+
+		
+    </script>
+
+
+    <section class="main-overlay" id="main-overlay">
+        <h1>This will be the heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error eius, aliquid recusandae deleniti
+            dolores, dignissimos, repellendus cum at quidem a. Eum aspernatur illo, exercitationem sint debitis
+            reiciendis! Omnis dolores quae vel sapiente repellat sequi fuga qui doloremque maxime mollitia.</p>
+    </section>
+
     <div id="webgl"></div>
-      
-   <!--build:js assets/scripts/three.js-->    
-   <script src="/lib/three.js"></script> 
-   <!--endbuild-->
 
- <!--build:js assets/scripts/FBXLoader.js-->  
- <script src="/lib/FBXLoader.js"></script>
- <!--endbuild-->
- 
-  <script src="/lib/Water.js"></script> 
- <!--build:js assets/scripts/inflate.min.js-->  
- <script src="/lib/inflate.min.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/EffectComposer.js-->  
- <script src="/lib/EffectComposer.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/RenderPass.js-->  
- <script src="/lib/RenderPass.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/ShaderPass.js-->  
- <script src="/lib/ShaderPass.js"></script> 
- <!--endbuild-->
- <!--build:js assets/scripts/CopyShader.js-->  
- <script src="/lib/CopyShader.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/LuminosityHighPassShader.js-->  
- <script src="/lib/LuminosityHighPassShader.js"></script> 
- <!--endbuild-->
- <!--build:js assets/scripts/UnrealBloomPass.js-->  
-  <script src="/lib/UnrealBloomPass.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/OrbitControls.js-->  
- <script src="/lib/OrbitControls.js"></script>
- <!--endbuild-->
- <!--build:js assets/scripts/Sky.js-->  
- <script src="/lib/Sky.js"></script> 
-  <!--endbuild-->
-  <script src="/lib/WebGl.js"></script>
- <!--build:js assets/scripts/VignetteShader.js-->  
-  <script src="/lib/VignetteShader.js"></script>
-  <!--endbuild-->
-  <!--build:js assets/scripts/RGBShiftShader.js-->  
-  <script src="/lib/RGBShiftShader.js"></script>
-  <!--endbuild-->
-  <script src="/lib/stats.min.js"></script>
-  <!--build:js assets/scripts/dat.gui.min.js-->  
- <script src="/lib/dat.gui.min.js"></script>
- <!--endbuild--> 
- 
- <!--build:js assets/scripts/app.js-->   
- <script src="/temp/scripts/app.js" async></script> 
- <!--endbuild-->
-    
-    
-   
-   
+    <!--build:js assets/scripts/three.js-->
+    <script src="/lib/three.js"></script>
+    <!--endbuild-->
+
+
+
+    <!--build:js assets/scripts/FBXLoader.js-->
+    <script src="/lib/FBXLoader.js"></script>
+    <!--endbuild-->
+
+
+    <!--build:js assets/scripts/Water.js-->
+    <script src="/lib/Water.js"></script>
+    <!--endbuild-->
+
+    <!--build:js assets/scripts/inflate.min.js-->
+    <script src="/lib/inflate.min.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/EffectComposer.js-->
+    <script src="/lib/EffectComposer.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/RenderPass.js-->
+    <script src="/lib/RenderPass.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/ShaderPass.js-->
+    <script src="/lib/ShaderPass.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/CopyShader.js-->
+    <script src="/lib/CopyShader.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/LuminosityHighPassShader.js-->
+    <script src="/lib/LuminosityHighPassShader.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/UnrealBloomPass.js-->
+    <script src="/lib/UnrealBloomPass.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/OrbitControls.js-->
+    <script src="/lib/OrbitControls.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/Sky.js-->
+    <script src="/lib/Sky.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/WebGl.js-->
+    <script src="/lib/WebGl.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/VignetteShader.js-->
+    <script src="/lib/VignetteShader.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/RGBShiftShader.js-->
+    <script src="/lib/RGBShiftShader.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/stats.min.js-->
+    <script src="/lib/stats.min.js"></script>
+    <!--endbuild-->
+    <!--build:js assets/scripts/dat.gui.min.js-->
+    <script src="/lib/dat.gui.min.js"></script>
+    <!--endbuild-->
+
+    <!--build:js assets/scripts/app.js-->
+    <script src="/temp/scripts/app.js" async></script>
+    <!--endbuild-->
+
+
+
+
 </body>
 
 </html>

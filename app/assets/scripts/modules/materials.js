@@ -17,6 +17,7 @@ export const materials = (function(){
                 break;
             case 'standard':
                 selectedMaterial = new THREE.MeshStandardMaterial(materialOptions);
+                morphTargets: true
                 break;
             default: 
                 selectedMaterial = new THREE.MeshBasicMaterial(materialOptions);
